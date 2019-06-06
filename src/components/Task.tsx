@@ -1,11 +1,8 @@
 import React from 'react';
+import { ITask } from '../types';
 
 export interface TaskProps {
-  task: {
-    id: string;
-    title: string;
-    state: string;
-  };
+  task: ITask;
   onArchiveTask: Function;
   onPinTask: Function;
 }
