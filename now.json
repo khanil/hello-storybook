@@ -26,8 +26,7 @@
     { "src": "/icon/(.*)", "dest": "/icon/$1" },
     {
       "src": "/(.*)",
-      "headers": { "cache-control": "s-maxage=0" },
-      "dest": "/index.html"
+      "dest": "/$1"
     }
   ]
 }
