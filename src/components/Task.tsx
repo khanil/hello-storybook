@@ -8,7 +8,7 @@ export interface TaskProps {
 }
 
 const Task: React.FunctionComponent<TaskProps> = ({ task: { title, id, state }, onArchiveTask, onPinTask }) => (
-  <div className={`list-item ${state}`}>
+  <div className={`list-item ${state}`} style={{ border: '1px solid #000' }}>
     <label className="checkbox">
       <input type="checkbox" defaultChecked={state === 'TASK_ARCHIVED'} disabled={true} name="checked" />
       <span className="checkbox-custom" onClick={() => onArchiveTask(id)} />
